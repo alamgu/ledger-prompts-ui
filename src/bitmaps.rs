@@ -1,4 +1,4 @@
-use include_gif::include_gif;
+use ledger_device_sdk::include_gif;
 use ledger_device_sdk::ui::bitmaps::Glyph;
 
 pub const CHECK_GLYPH: Glyph = Glyph::from_include(include_gif!("icons/check.gif"));
