@@ -6,13 +6,10 @@ edition = "2018"
 [dependencies]
 arrayvec = { version = "0.7.1", default-features = false }
 ledger_device_sdk = "1.28.0"
-ledger-log = { git = "https://github.com/alamgu/ledger-log.git" }
+ledger-log = { git = "https://github.com/alamgu/ledger-log.git", branch = "y333/rust_sdk_single_crate" }
 
 [features]
 speculos = ["ledger_device_sdk/speculos"]
 
 [patch.crates-io]
 ledger_device_sdk = { git = "https://github.com/LedgerHQ/ledger-device-rust-sdk.git" }
-
-[patch."https://github.com/alamgu/ledger-log"]
-ledger-log = { path = "../../alamgu/ledger-log" }
